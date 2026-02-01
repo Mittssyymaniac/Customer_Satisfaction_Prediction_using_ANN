@@ -2,11 +2,12 @@ import streamlit as st
 import pandas as pd
 from tensorflow import keras
 import numpy as np
-
+# new= CSA_ANN.py
+# old = csat_ann_model_new.keras
 # ------------------------------
 # ✅ Load Model (final clean version)
 # ------------------------------
-MODEL_PATH = "csat_ann_model_new.keras"
+MODEL_PATH = "CSA_ANN.py"
 model = keras.models.load_model(MODEL_PATH, compile=False)
 import base64
 
@@ -212,4 +213,5 @@ if st.button("Predict CSAT Score"):
     st.markdown(f"<h2 style='text-align:center; color:gold;'>{stars_display}</h2>", unsafe_allow_html=True)
     st.success("Success ✅")
     
+
 
