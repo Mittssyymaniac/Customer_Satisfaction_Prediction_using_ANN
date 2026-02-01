@@ -7,7 +7,7 @@ import numpy as np
 # ------------------------------
 # ✅ Load Model (final clean version)
 # ------------------------------
-MODEL_PATH = "CSA_ANN.py"
+MODEL_PATH = "csat_ann_model_new.keras"
 model = keras.models.load_model(MODEL_PATH, compile=False)
 import base64
 
@@ -213,5 +213,6 @@ if st.button("Predict CSAT Score"):
     st.markdown(f"<h2 style='text-align:center; color:gold;'>{stars_display}</h2>", unsafe_allow_html=True)
     st.success("Success ✅")
     
+
 
 
